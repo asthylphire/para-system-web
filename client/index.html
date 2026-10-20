@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Para</title>
+
+    <link rel="icon" type="image/png" href="../assets/logo-1.png" />
+
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/main.css" />
+
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css" />
+    <!-- Apply dark mode before page renders so there's no flash -->
+    <!-- <script>
+        if (localStorage.getItem('para_dark') === 'true') {
+            document.documentElement.classList.add('dark');
+        }
+    </script> -->
+</head>
+
+<body>
+
+    <!--NAVBAR -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-inner">
+            <div class="nav-logo-container">
+                <a href="index.html">
+                    <img src="../assets/logo-2.png" id="navbar-logo" alt="Para logo" />
+                </a>
+            </div>
+
+            <ul class="nav-links" aria-label="Site navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="calculate.html">Calculate</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button id="dark-toggle" class="dark-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+                    <div class="toggle-knob">
+                        <img src="../assets/light-icon.png" alt="Mode icon" />
+                    </div>
+                </button>
+                <div id="nav-auth-area">
+                    <a href="auth.html" class="nav-auth-btn">Log In</a>
+                </div>
+
+                <!-- Nav for mobile and tablet -->
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu">
+                    <img src="../assets/menu.png" alt="Menu" />
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Sidebar for mobile and tablet -->
+    <div class="sidebar-overlay" id="sidebar-overlay">
+        <aside class="sidebar" role="dialog" aria-label="Mobile navigation">
+            <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">&times;</button>
+            <ul class="sidebar-nav">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="calculate.html">Calculate</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+            <a href="auth.html" class="sidebar-auth-btn">Log In</a>
+        </aside>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification-container" role="status" aria-live="polite"></div>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-inner">
+
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-top">Your Smarter Way</span>
+                        <span class="title-bottom">To Navigate SJDM</span>
+                    </h1>
+                    <p class="hero-desc">
+                        No more guessing fares or getting lost. Real-time route
+                        planning and fare calculation for the modern SJDM commuter.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="calculate.html" class="hero-cta">
+                            <span>Start Your Commute!</span>
+                            <img src="../assets/right-arrow-icon.png" alt="" class="cta-icon" aria-hidden="true" />
+                        </a>
+                        <a href="#" class="btn-secondary">Watch Demo</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="../assets/Para-Designshh.png" alt="Para the parrot mascot" />
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="how-section" aria-label="How it works">
+            <h2 class="section-title anim-on-scroll">HOW PARA WORKS?</h2>
+            <div class="how-cards">
+
+                <article class="how-card anim-on-scroll anim-delay-1">
+                    <div class="icon-container">
+                        <img src="../assets/map-green.png" alt="" class="how-icon default-icon" aria-hidden="true" />
+                        <img src="../assets/map-white.png" alt="" class="how-icon hover-icon" aria-hidden="true" />
+                    </div>
+                    <h3>Pick Your Perch</h3>
+                    <p>Search for your start and end points in San Jose del Monte.</p>
+                </article>
+
+                <article class="how-card anim-on-scroll anim-delay-2">
+                    <div class="icon-container">
+                        <img src="../assets/calculator-green.png" alt="" class="how-icon default-icon"
+                            aria-hidden="true" />
+                        <img src="../assets/calculator-white.png" alt="" class="how-icon hover-icon"
+                            aria-hidden="true" />
+                    </div>
+                    <h3>Let Para Calculate</h3>
+                    <p>Our system fetches the latest LTFRB matrix and computes your fare instantly.</p>
+                </article>
+
+                <article class="how-card anim-on-scroll anim-delay-3">
+                    <div class="icon-container">
+                        <img src="../assets/traveling-green.png" alt="" class="how-icon default-icon"
+                            aria-hidden="true" />
+                        <img src="../assets/traveling-white.png" alt="" class="how-icon hover-icon"
+                            aria-hidden="true" />
+                    </div>
+                    <h3>See Your Path</h3>
+                    <p>Watch your route appear on the map and check if your destination is within reach.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- KEY FEATURES -->
+        <section class="features-section" aria-label="Key features">
+            <div class="features-inner">
+                <h2 class="section-title anim-on-scroll">PARA FEATURES</h2>
+
+                <div class="features-grid">
+                    <div class="features-mascot anim-on-scroll">
+                        <img src="../assets/Para-Designs22.png" alt="Para holding a phone" />
+                    </div>
+
+                    <div class="features-content">
+                        <div class="feature-item anim-on-scroll anim-delay-1">
+                            <div class="feature-num">1</div>
+                            <div class="feature-text">
+                                <h4>Live Fare Matrix</h4>
+                                <p>Always updated with the latest 2026 fare rates for students and seniors.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item anim-on-scroll anim-delay-2">
+                            <div class="feature-num">2</div>
+                            <div class="feature-text">
+                                <h4>Interactive SJDM Map</h4>
+                                <p>Powered by Leaflet.js and OpenStreetMap for precise landmark navigation.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item anim-on-scroll anim-delay-3">
+                            <div class="feature-num">3</div>
+                            <div class="feature-text">
+                                <h4>Access Alerts</h4>
+                                <p>Know immediately if a location requires a tricycle 'Special Trip' or a short walk.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MEET PARA -->
+        <section class="meet-section" aria-label="Meet Para">
+            <div class="meet-inner">
+                <h2 class="section-title">MEET PARA</h2>
+
+                <div class="meet-grid">
+                    <div class="meet-col-left anim-on-scroll">
+                        <h3 class="meet-intro-text">Say hello to Para, your eye-in-the-sky for SJDM commuting.</h3>
+                        <p>Inspired by the agile Philippine Hanging Parrot (Colasisi), Para is built to master the local
+                            roads.</p>
+                    </div>
+
+                    <div class="meet-para-img anim-on-scroll">
+                        <img src="../assets/Para-Designs (4).png" alt="Para the parrot flying" />
+                    </div>
+
+                    <div class="meet-col-right anim-on-scroll">
+                        <p>More than just a mascot, Para is the brain behind our dynamic fare engine.</p>
+                        <p>He calculates the exact distance of your journey, applies your discount, and visualizes your
+                            entire trip on an interactive map.</p>
+                        <p>With Para, you'll find your stop, know your fare, and master the roads of San Jose del Monte
+                            like a pro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="../assets/logo-2.png" alt="Para logo" />
+                </a>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Contact Us</h4>
+                <ul class="footer-list">
+                    <li><i class="fi fi-rr-phone-call"></i> <span>+63 930 781 0612</span></li>
+                    <li><i class="fi fi-rr-envelope"></i> <span>para@gmail.com</span></li>
+                    <li><i class="fi fi-rr-marker"></i> <span>3023, CSJDM Bulacan, Philippines</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Help &amp; FAQs</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li class="footer-socials">
+                        <a href="#" title="Facebook"><i class="fi fi-brands-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fi fi-brands-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Para. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <img src="../assets/up-arrow-icon.png" alt="Up" class="back-to-top-icon" />
+    </button>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../scripts/api.js"></script>
+    <script src="../scripts/auth.js"></script>
+    <script src="../scripts/app.js"></script>
+
+</body>
+
+</html>

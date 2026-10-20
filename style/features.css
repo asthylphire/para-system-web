@@ -1,0 +1,120 @@
+/* Styles for the features added with the PHP backend:
+   trips, favorites, ETA line, field errors. Load AFTER global.css / calculate.css / auth.css. */
+
+/* ---- Calculate page: overlay buttons + panels ---- */
+.map-overlay-top-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+    max-width: calc(100% - 24px);
+}
+
+.overlay-item {
+    position: relative;
+}
+
+.landmarks-panel.wide {
+    width: 320px;
+}
+
+.panel-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.link-btn {
+    background: none;
+    border: none;
+    color: var(--red);
+    cursor: pointer;
+    font-size: 0.78rem;
+    font-weight: 600;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.link-btn:hover {
+    text-decoration: underline;
+}
+
+.landmark-list-item .lm-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.landmark-list-item .lm-info h5,
+.landmark-list-item .lm-info span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.item-del {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.item-del:hover {
+    color: var(--red);
+    background: rgba(231, 76, 60, 0.12);
+}
+
+/* ---- Result card: ETA note + action buttons ---- */
+.result-note {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.result-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.btn-sm {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 12px;
+    font-size: 0.8rem;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ---- Inline validation messages (modals + auth forms) ---- */
+.field-error {
+    color: var(--red);
+    font-size: 0.78rem;
+    margin: 4px 0 0 6px;
+    min-height: 0;
+}
+
+.auth-input-group.has-error input {
+    border-color: var(--red);
+}
+
+@media (max-width: 600px) {
+    .landmarks-panel.wide {
+        width: 260px;
+    }
+}

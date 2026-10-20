@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Para</title>
+
+    <link rel="icon" type="image/png" href="../assets/logo-1.png" />
+
+    <!-- CSS: global first, then page-specific -->
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/about.css" />
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css" />
+    <!-- Apply dark mode before page renders so there's no flash -->
+    <script src="../scripts/early-theme.js"></script>
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-inner">
+
+            <div class="nav-logo-container">
+                <a href="index.html">
+                    <img src="../assets/logo-2.png" id="navbar-logo" alt="Para logo" />
+                </a>
+            </div>
+
+            <ul class="nav-links" aria-label="Site navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculate.html">Calculate</a></li>
+                <li><a href="aboutus.html" class="active">About Us</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button id="dark-toggle" class="dark-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+                    <div class="toggle-knob">
+                        <img src="../assets/light-icon.png" alt="Mode icon" />
+                    </div>
+                </button>
+                <div id="nav-auth-area">
+                    <a href="auth.html" class="nav-auth-btn">Log In</a>
+                </div>
+
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu">
+                    <img src="../assets/menu.png" alt="Menu" />
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- sidebar (mobile/tablet) -->
+    <div class="sidebar-overlay" id="sidebar-overlay">
+        <aside class="sidebar" role="dialog" aria-label="Mobile navigation">
+            <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">&times;</button>
+            <ul class="sidebar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculate.html">Calculate</a></li>
+                <li><a href="aboutus.html" class="active">About Us</a></li>
+            </ul>
+            <div id="sidebar-auth-area">
+                <a href="auth.html" class="sidebar-auth-btn">Log In</a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Notification toasts -->
+    <div id="notification-container" role="status" aria-live="polite"></div>
+
+    <main>
+
+        <!--about us (header banner)-->
+        <div class="about-header anim-on-scroll">
+            <h1>About Us</h1>
+        </div>
+
+        <!--
+             about us (main content)
+             Left: text paragraphs
+             Right: mascot with green bubble bg -->
+        <section class="about-content" aria-label="About Para">
+            <div class="about-text anim-on-scroll">
+                <p>
+                    Kamusta, fellow traveler! I'm <strong>Para</strong>, your digital guide
+                    designed to improve your daily commute in San Jose del Monte by providing
+                    real-time navigation and updates.
+                </p>
+                <p>
+                    I was hatched with a single mission. I'm making sure no commuter ever has
+                    to guess their fare or lose their way again. Whether I'm calculating the
+                    exact distance of your trip, applying your student discount, or chirping a
+                    warning, I'm here to bring precision and peace of mind to your daily commute.
+                    Knowing your fare and route options can make your day smoother and less stressful.
+                </p>
+                <p>
+                    This isn't just a map — it's a community-driven flock. By marking your own
+                    perches and sharing route updates, you're helping me grow smarter every day.
+                    Your participation makes our community stronger and more connected. So, let's
+                    fly together and master the roads of SJDM like pros. <strong>Para po!</strong>
+                </p>
+            </div>
+
+            <!-- Mascot with green rounded background bubble -->
+            <div class="about-mascot anim-on-scroll anim-delay-1">
+                <img src="../assets/para-9.png" alt="Para the parrot mascot" />
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="../assets/logo-2.png" alt="Para logo" />
+                </a>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Contact Us</h4>
+                <ul class="footer-list">
+                    <li><i class="fi fi-rr-phone-call"></i> <span>+63 930 781 0612</span></li>
+                    <li><i class="fi fi-rr-envelope"></i> <span>para@gmail.com</span></li>
+                    <li><i class="fi fi-rr-marker"></i> <span>3023, CSJDM Bulacan, Philippines</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Help &amp; FAQs</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Help &amp; FAQs</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li class="footer-socials">
+                        <a href="#" title="Facebook"><i class="fi fi-brands-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fi fi-brands-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Para. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../scripts/auth.js"></script>
+    <script src="../scripts/app.js"></script>
+
+</body>
+</html>

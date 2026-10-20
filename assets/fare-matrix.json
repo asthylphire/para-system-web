@@ -1,0 +1,36 @@
+{
+    "updated": "2026",
+    "source": "LTFRB",
+    "types": {
+        "bus_aircon": {
+            "label": "Bus (Aircon)",
+            "baseFare": 15.00,
+            "baseKm": 5,
+            "excessPerKm": 2.65
+        },
+        "bus_ordinary": {
+            "label": "Bus (Ordinary)",
+            "baseFare": 13.00,
+            "baseKm": 5,
+            "excessPerKm": 2.20
+        },
+        "modern_jeepney": {
+            "label": "Modern Jeepney",
+            "baseFare": 14.00,
+            "baseKm": 4,
+            "excessPerKm": 2.35
+        },
+        "traditional_jeepney": {
+            "label": "Traditional Jeepney",
+            "baseFare": 13.00,
+            "baseKm": 4,
+            "excessPerKm": 1.80
+        }
+    },
+    "discounts": {
+        "regular": { "label": "Regular",        "rate": 0    },
+        "student": { "label": "Student",        "rate": 0.20 },
+        "senior":  { "label": "Senior Citizen", "rate": 0.20 },
+        "pwd":     { "label": "PWD",            "rate": 0.20 }
+    }
+}

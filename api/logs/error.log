@@ -1,0 +1,103 @@
+[10-Oct-2026 19:53:31 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 20:00:22 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 20:00:23 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 20:00:31 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 20:00:31 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 20:00:31 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 20:00:31 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 20:00:31 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 20:00:31 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 20:00:32 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 20:00:58 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 21:35:54 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 21:35:54 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 21:36:31 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 21:36:43 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[10-Oct-2026 21:36:43 Europe/Berlin] SQLSTATE[HY000] [1045] Access denied for user 'para_app'@'localhost' (using password: YES) @ C:\SQL\htdocs\para-web-system\api\config\db.php:16
+[12-Oct-2026 13:33:38 Europe/Berlin] SQLSTATE[HY000] [1049] Unknown database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[12-Oct-2026 13:33:53 Europe/Berlin] SQLSTATE[HY000] [1049] Unknown database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[12-Oct-2026 13:37:33 Europe/Berlin] SQLSTATE[HY000] [1049] Unknown database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[12-Oct-2026 13:37:53 Europe/Berlin] SQLSTATE[HY000] [1049] Unknown database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 14:19:40 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:58:09 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:58:50 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:58:52 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:25 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:27 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:28 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:29 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:29 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:29 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:37 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:37 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:37 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:37 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:37 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:37 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:38 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:38 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:38 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:38 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:38 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:38 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 15:59:39 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:01:43 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:08 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:09 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:10 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:10 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:10 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:10 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:11 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:11 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:11 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:11 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:56 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:57 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:58 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:58 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:58 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:58 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:58 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:59 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:59 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:59 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:59 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:59 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:24:59 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:00 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:00 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:00 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:00 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:00 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:01 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:01 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:07 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:07 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:07 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:08 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:08 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:08 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:08 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:08 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:09 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:09 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:09 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:25:09 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:26:47 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:26:48 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:26:48 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:26:48 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:26:49 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[18-Oct-2026 16:26:49 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[20-Oct-2026 03:13:01 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[20-Oct-2026 03:13:38 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[20-Oct-2026 03:13:40 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[20-Oct-2026 03:13:42 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[20-Oct-2026 03:13:42 Europe/Berlin] SQLSTATE[HY000] [1044] Access denied for user 'para_app'@'localhost' to database 'para_db' @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[20-Oct-2026 06:37:37 Europe/Berlin] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for sql107.infinityfree.com failed: No such host is known.  @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[20-Oct-2026 06:37:41 Europe/Berlin] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for sql107.infinityfree.com failed: No such host is known.  @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[20-Oct-2026 06:38:01 Europe/Berlin] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for sql107.infinityfree.com failed: No such host is known.  @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[20-Oct-2026 06:38:01 Europe/Berlin] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for sql107.infinityfree.com failed: No such host is known.  @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[20-Oct-2026 06:38:54 Europe/Berlin] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for sql107.infinityfree.com failed: No such host is known.  @ C:\xampp\htdocs\para-web-system\api\config\db.php:11
+[20-Oct-2026 06:38:54 Europe/Berlin] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for sql107.infinityfree.com failed: No such host is known.  @ C:\xampp\htdocs\para-web-system\api\config\db.php:11

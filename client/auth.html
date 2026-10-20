@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para - Sign In</title>
+
+    <link rel="icon" type="image/png" href="../assets/logo-1.png" />
+
+    <!-- CSS: global first, then auth-specific -->
+    <link rel="stylesheet" href="../style/features.css" />
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/auth.css" />
+
+    <!-- Flat Icons -->
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <!-- Apply dark mode before page renders so there's no flash -->
+    <script src="../scripts/early-theme.js"></script>
+</head>
+
+<body>
+
+    <!-- mini navbar for auth pages -->
+    <nav class="auth-nav" role="navigation" aria-label="Auth navigation">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">
+                <img src="../assets/logo-2.png" alt="Para logo" />
+            </a>
+
+            <div class="nav-right">
+                <button id="dark-toggle" class="dark-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+                    <div class="toggle-knob">
+                        <img src="../assets/light-icon.png" alt="Mode icon" />
+                    </div>
+                </button>
+                <a href="index.html" class="btn-guest-outline">Guest</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- notification toast -->
+    <div id="notification-container" role="status" aria-live="polite"></div>
+
+    <!-- login page -->
+    <main id="auth-login" class="auth-page">
+        <div class="auth-container">
+
+            <div class="auth-mascot">
+                <img src="../assets/para-8.png" alt="Para welcoming you" />
+            </div>
+
+            <!-- Login form -->
+            <div class="auth-card">
+                <h1>LOG IN</h1>
+
+                <div class="auth-input-group">
+                    <input type="email" id="login-email" placeholder="Email" autocomplete="email" aria-label="Email" />
+                    <span class="auth-input-icon"><i class="fi fi-rr-envelope"></i></span>
+                </div>
+
+                <div class="auth-input-group">
+                    <input type="password" id="login-password" placeholder="Password" autocomplete="current-password"
+                        aria-label="Password" />
+                    <span class="auth-input-icon clickable" id="toggle-pw-login"><i class="fi fi-rr-eye-crossed" id="eye-login" aria-hidden="true"></i></span>
+                    </span>
+                </div>
+
+                <button class="btn-auth" id="login-submit">Sign In</button>
+
+                <div class="auth-link-row">
+                    <a href="#" id="go-forgot">Forgot Password</a>
+                </div>
+                <div class="auth-link-row">
+                    Don't have an Account? <a href="#" id="go-signup">Sign Up</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- sign up page -->
+    <main id="auth-signup" class="auth-page hidden">
+        <div class="auth-container">
+
+            <!-- Signup form -->
+            <div class="auth-card">
+                <h1>SIGN UP</h1>
+
+                <div class="auth-input-group">
+                    <input type="text" id="signup-name" placeholder="Name" autocomplete="name" aria-label="Full name" />
+                </div>
+
+                <div class="auth-input-group">
+                    <input type="email" id="signup-email" placeholder="Email" autocomplete="email" aria-label="Email" />
+                    <span class="auth-input-icon"><i class="fi fi-rr-envelope"></i></span>
+                </div>
+
+                <div class="auth-input-group">
+                    <input type="password" id="signup-password" placeholder="Password" autocomplete="new-password"
+                        aria-label="Password" />
+                    <span class="auth-input-icon clickable" id="toggle-pw-signup"><i class="fi fi-rr-eye-crossed" id="eye-signup" aria-hidden="true"></i></span>
+                    </span>
+                </div>
+
+                <label class="auth-checkbox">
+                    <input type="checkbox" id="signup-agree" />
+                    I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+                </label>
+
+                <button class="btn-auth" id="signup-submit">Create Account</button>
+
+                <div class="auth-link-row">
+                    Have an Account? <a href="#" id="go-login-from-signup">Log In</a>
+                </div>
+            </div>
+
+            <!-- Para mascot with speech bubble -->
+            <div class="auth-mascot">
+                <!-- <div class="auth-speech">Ready to take flight?</div> -->
+                <img src="../assets/para-6.png" alt="Para ready to fly" />
+            </div>
+
+        </div>
+    </main>
+
+    <!-- forgot password page -->
+    <main id="auth-forgot" class="auth-page hidden">
+        <div class="auth-container">
+
+            <!-- Forgot password form -->
+            <div class="auth-card">
+                <h1>FORGOT PASSWORD</h1>
+
+                <div class="auth-input-group">
+                    <input type="email" id="forgot-email" placeholder="Email" autocomplete="email" aria-label="Email" />
+                    <span class="auth-input-icon"><i class="fi fi-rr-envelope"></i></span>
+                </div>
+
+                <div class="auth-input-group">
+                    <input type="password" id="forgot-newpw" placeholder="New Password" aria-label="New password" />
+                </div>
+
+                <div class="auth-input-group">
+                    <input type="password" id="forgot-confirmpw" placeholder="Confirm Password"
+                        aria-label="Confirm new password" />
+                </div>
+
+                <button class="btn-auth" id="forgot-submit">Create Account</button>
+
+                <div class="auth-link-row">
+                    Back to <a href="#" id="go-login-from-forgot">Log In</a>
+                </div>
+                <div class="auth-link-row">
+                    Don't have an Account? <a href="#" id="go-signup-from-forgot">Sign Up</a>
+                </div>
+            </div>
+
+            <!-- Para mascot (no speech bubble for this page) -->
+            <div class="auth-mascot">
+                <img src="../assets/para-6.png" alt="Para thinking" />
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../scripts/api.js"></script>
+    <script src="../scripts/auth.js"></script>
+    <script src="../scripts/app.js"></script>
+
+</body>
+
+</html>

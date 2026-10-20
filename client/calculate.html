@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate - Para</title>
+
+    <link rel="icon" type="image/png" href="../assets/logo-1.png" />
+
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/calculate.css" />
+    <link rel="stylesheet" href="../style/features.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css" />
+    <!-- Apply dark mode before page renders so there's no flash -->
+    <script src="../scripts/early-theme.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-inner">
+
+            <div class="nav-logo-container">
+                <a href="index.html">
+                    <img src="../assets/logo-2.png" id="navbar-logo" alt="Para logo" />
+                </a>
+            </div>
+
+            <ul class="nav-links" aria-label="Site navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculate.html" class="active">Calculate</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button id="dark-toggle" class="dark-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+                    <div class="toggle-knob">
+                        <img src="../assets/light-icon.png" alt="Mode icon" />
+                    </div>
+                </button>
+                <div id="nav-auth-area">
+                    <a href="auth.html" class="nav-auth-btn">Log In</a>
+                </div>
+
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu">
+                    <img src="../assets/menu.png" alt="Menu" />
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Sidebar for mobile and tablet -->
+    <div class="sidebar-overlay" id="sidebar-overlay">
+        <aside class="sidebar" role="dialog" aria-label="Mobile navigation">
+            <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">&times;</button>
+            <ul class="sidebar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculate.html" class="active">Calculate</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+            <div id="sidebar-auth-area">
+                <a href="auth.html" class="sidebar-auth-btn">Log In</a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification-container" role="status" aria-live="polite"></div>
+
+    <main>
+
+        <!-- CALCULATE LAYOUT -->
+        <div class="calculate-page-wrap">
+            <div class="calc-layout">
+
+                <!-- Left panel: inputs + fare result + hint -->
+                <aside>
+                    <div class="input-card">
+
+                        <!-- Origin / Destination with swap button -->
+                        <div class="input-row">
+                            <div class="route-icons">
+                                <div class="dot-top"></div>
+                                <div class="route-line"></div>
+                                <div class="dot-bot"></div>
+                            </div>
+                            <div class="route-inputs">
+                                <div class="search-input-wrapper">
+                                    <input type="text" id="origin-input" placeholder="Origin" autocomplete="off"
+                                        aria-label="Origin location" />
+                                    <div class="search-dropdown" id="origin-dropdown" role="listbox"></div>
+                                </div>
+                                <div class="search-input-wrapper">
+                                    <input type="text" id="dest-input" placeholder="Destination" autocomplete="off"
+                                        aria-label="Destination location" />
+                                    <div class="search-dropdown" id="dest-dropdown" role="listbox"></div>
+                                </div>
+                            </div>
+                            <button class="swap-btn" id="swap-btn" title="Swap origin and destination"
+                                aria-label="Swap">
+                                <i class="fi fi-rr-arrows-h-copy"></i>
+                            </button>
+                        </div>
+
+                        <!-- Transportation type (options are refreshed from the database by fare-engine.js) -->
+                        <div class="select-row">
+                            <i class="fi fi-rr-bus select-icon" aria-hidden="true"></i>
+                            <select id="transport-select" aria-label="Transportation type">
+                                <option value="">Transportation</option>
+                                <option value="bus_aircon">Bus (Aircon)</option>
+                                <option value="bus_ordinary">Bus (Ordinary)</option>
+                                <option value="modern_jeepney">Modern Jeepney</option>
+                                <option value="traditional_jeepney">Traditional Jeepney</option>
+                            </select>
+                        </div>
+
+                        <!-- Passenger type -->
+                        <div class="select-row">
+                            <i class="fi fi-rr-user select-icon" aria-hidden="true"></i>
+                            <select id="passenger-select" aria-label="Passenger type">
+                                <option value="">Passenger</option>
+                                <option value="regular">Regular</option>
+                                <option value="student">Student (20% off)</option>
+                                <option value="senior">Senior Citizen (20% off)</option>
+                                <option value="pwd">PWD (20% off)</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- Fare result (hidden until all inputs are filled) -->
+                    <div class="result-card" id="result-card" role="region" aria-label="Fare calculation result">
+                        <h3><i class="fi fi-rr-receipt" aria-hidden="true"></i> Fare Calculation Result</h3>
+                        <div class="result-line">
+                            <span class="label">Origin:</span>
+                            <span class="val" id="res-origin">—</span>
+                        </div>
+                        <div class="result-line">
+                            <span class="label">Destination:</span>
+                            <span class="val" id="res-dest">—</span>
+                        </div>
+                        <div class="result-line">
+                            <span class="label">Distance:</span>
+                            <span class="val" id="res-distance">—</span>
+                        </div>
+                        <div class="result-line">
+                            <span class="label">Est. Travel Time:</span>
+                            <span class="val" id="res-eta">—</span>
+                        </div>
+                        <div class="result-divider"></div>
+                        <div class="result-line">
+                            <span class="label">Base Fare:</span>
+                            <span class="val" id="res-base">—</span>
+                        </div>
+                        <div class="result-line">
+                            <span class="label">Excess Fare:</span>
+                            <span class="val" id="res-excess">—</span>
+                        </div>
+                        <div class="result-line">
+                            <span class="label">Passenger Type:</span>
+                            <span class="val" id="res-ptype">—</span>
+                        </div>
+                        <div class="result-line">
+                            <span class="label">Discount:</span>
+                            <span class="val" id="res-discount">—</span>
+                        </div>
+                        <div class="result-total">
+                            <span>Total:</span>
+                            <span id="res-total">₱0.00</span>
+                        </div>
+                        <p class="result-note">
+                            Distance is measured in a straight line and travel time uses an average speed,
+                            so the actual fare and time may vary.
+                        </p>
+                        <div class="result-actions">
+                            <button type="button" class="btn btn-outline btn-sm" id="save-trip-btn">
+                                <i class="fi fi-rr-bookmark" aria-hidden="true"></i> Save trip
+                            </button>
+                            <button type="button" class="btn btn-outline btn-sm" id="fav-btn">
+                                <i class="fi fi-rr-star" aria-hidden="true"></i> Favorite
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="para-hint" id="para-hint">
+                        <img src="../assets/para-4.png" alt="Para mascot" class="para-mascot" />
+                        <p id="para-hint-text"><strong>Select first at the top to see Fare Price!</strong></p>
+                    </div>
+
+                </aside>
+
+                <div class="map-container">
+                    <div id="map" role="application" aria-label="Interactive SJDM map"></div>
+
+                    <!-- Floating buttons over the map: Favorites / Recent Trips / My Landmarks -->
+                    <div class="map-overlay-top-right">
+
+                        <div class="overlay-item">
+                            <button class="my-landmarks-btn" id="favorites-toggle-btn" aria-expanded="false"
+                                aria-controls="favorites-panel">
+                                <i class="fi fi-rr-heart" aria-hidden="true"></i> Favorites
+                                <i class="fi fi-rr-angle-small-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="landmarks-panel wide" id="favorites-panel" role="dialog"
+                                aria-label="My favorite routes">
+                                <div class="panel-head"><span>Favorite routes</span></div>
+                                <div id="favorites-list"></div>
+                            </div>
+                        </div>
+
+                        <div class="overlay-item">
+                            <button class="my-landmarks-btn" id="trips-toggle-btn" aria-expanded="false"
+                                aria-controls="trips-panel">
+                                <i class="fi fi-rr-time-past" aria-hidden="true"></i> Recent Trips
+                                <i class="fi fi-rr-angle-small-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="landmarks-panel wide" id="trips-panel" role="dialog"
+                                aria-label="My recent trips">
+                                <div class="panel-head">
+                                    <span>Tap a trip to run it again</span>
+                                    <button type="button" class="link-btn" id="trips-clear-btn">Clear all</button>
+                                </div>
+                                <div id="trips-list"></div>
+                            </div>
+                        </div>
+
+                        <div class="overlay-item">
+                            <button class="my-landmarks-btn" id="landmarks-toggle-btn" aria-expanded="false"
+                                aria-controls="landmarks-panel">
+                                <i class="fi fi-rr-star" aria-hidden="true"></i> My Landmarks
+                                <i class="fi fi-rr-angle-small-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="landmarks-panel" id="landmarks-panel" role="dialog"
+                                aria-label="My saved landmarks">
+                                <input type="text" class="landmarks-search" id="landmarks-search"
+                                    placeholder="Search landmarks..." aria-label="Search landmarks" />
+                                <div id="landmarks-list"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- MODAL: Add Landmark -->
+    <div class="modal-overlay" id="add-landmark-modal" role="dialog" aria-modal="true" aria-labelledby="add-lm-title">
+        <div class="modal">
+            <h2 id="add-lm-title"><i class="fi fi-rr-marker" aria-hidden="true"></i> Add a Landmark</h2>
+
+            <div class="form-group">
+                <label for="lm-name">Name:</label>
+                <input type="text" id="lm-name" placeholder="e.g. SM City SJDM" maxlength="150" />
+            </div>
+
+            <div class="form-group">
+                <label for="lm-category">Category:</label>
+                <select id="lm-category">
+                    <option value="other">Other</option>
+                    <option value="school">School</option>
+                    <option value="hospital">Hospital</option>
+                    <option value="terminal">Terminal</option>
+                    <option value="market">Market</option>
+                    <option value="church">Church</option>
+                    <option value="park">Park</option>
+                    <option value="food">Food</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="lm-desc">Short Description:</label>
+                <textarea id="lm-desc" placeholder="Brief description of this place..." maxlength="500"></textarea>
+            </div>
+
+            <div class="modal-actions">
+                <button class="btn btn-outline" onclick="closeModal('add-landmark-modal')">Cancel</button>
+                <button class="btn btn-primary" onclick="submitAddLandmark()">Add Landmark</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: View Landmark -->
+    <div class="modal-overlay" id="view-landmark-modal" role="dialog" aria-modal="true" aria-labelledby="view-lm-title">
+        <div class="modal">
+            <h2 id="view-lm-title"><i class="fi fi-rr-tag" aria-hidden="true"></i> Landmark Details</h2>
+
+            <div class="result-line" style="margin-bottom: 12px;">
+                <span class="label">Landmark Name:</span>
+                <span class="val" id="view-lm-name">—</span>
+            </div>
+            <div class="result-line" style="margin-bottom: 12px;">
+                <span class="label">Category:</span>
+                <span class="val" id="view-lm-category">—</span>
+            </div>
+            <div class="result-line" style="margin-bottom: 12px;">
+                <span class="label">Short Description:</span>
+                <span class="val" id="view-lm-desc" style="text-align: left; word-break: break-word;">—</span>
+            </div>
+
+            <div class="modal-actions">
+                <button class="btn btn-outline" onclick="openEditLandmark()">Edit</button>
+                <button class="btn btn-danger" onclick="deleteLandmarkConfirm()">Delete</button>
+                <button class="btn btn-primary" onclick="closeModal('view-landmark-modal')">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Edit Landmark -->
+    <div class="modal-overlay" id="edit-landmark-modal" role="dialog" aria-modal="true" aria-labelledby="edit-lm-title">
+        <div class="modal">
+            <h2 id="edit-lm-title"><i class="fi fi-rr-pencil" aria-hidden="true"></i> Edit Landmark</h2>
+
+            <input type="hidden" id="edit-lm-id" />
+
+            <div class="form-group">
+                <label for="edit-lm-name">Enter new Name:</label>
+                <input type="text" id="edit-lm-name" maxlength="150" />
+            </div>
+
+            <div class="form-group">
+                <label for="edit-lm-category">Select new Category:</label>
+                <select id="edit-lm-category">
+                    <option value="other">Other</option>
+                    <option value="school">School</option>
+                    <option value="hospital">Hospital</option>
+                    <option value="terminal">Terminal</option>
+                    <option value="market">Market</option>
+                    <option value="church">Church</option>
+                    <option value="park">Park</option>
+                    <option value="food">Food</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="edit-lm-desc">Enter new Short Description:</label>
+                <textarea id="edit-lm-desc" maxlength="500"></textarea>
+            </div>
+
+            <div class="modal-actions">
+                <button class="btn btn-outline" onclick="closeModal('edit-landmark-modal')">Cancel</button>
+                <button class="btn btn-primary" onclick="submitEditLandmark()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Save Favorite Route -->
+    <div class="modal-overlay" id="add-favorite-modal" role="dialog" aria-modal="true" aria-labelledby="add-fav-title">
+        <div class="modal">
+            <h2 id="add-fav-title"><i class="fi fi-rr-star" aria-hidden="true"></i> Save Favorite Route</h2>
+
+            <div class="form-group">
+                <label for="fav-label">Label:</label>
+                <input type="text" id="fav-label" placeholder="e.g. Home to School" maxlength="100" />
+                <div class="field-error" id="fav-label-error"></div>
+            </div>
+
+            <div class="modal-actions">
+                <button class="btn btn-outline" onclick="closeModal('add-favorite-modal')">Cancel</button>
+                <button class="btn btn-primary" id="fav-save-btn">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS (order matters: libraries, then api.js, then the rest) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../scripts/api.js"></script>
+    <script src="../scripts/auth.js"></script>
+    <script src="../scripts/fare-engine.js"></script>
+    <script src="../scripts/data-manager.js"></script>
+    <script src="../scripts/map-logic.js"></script>
+    <script src="../scripts/app.js"></script>
+
+</body>
+
+</html>
